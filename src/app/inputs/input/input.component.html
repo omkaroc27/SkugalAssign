@@ -1,0 +1,57 @@
+<h1 style="color:rebeccapurple;font-size:xx-large">
+    Skugal TODO Application</h1>
+
+
+<br>
+<section class="">
+
+    <div class="flex-box">
+        <div class="row">
+            <div class="col">
+
+                <button type="button" onclick="f1()" class=" shadow-sm btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="Bold Text">
+                        <img src="https://img.icons8.com/color/24/000000/bold.png"/></button>
+                <button type="button" onclick="f2()" class="shadow-sm btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Italic Text">
+                        <img src="https://img.icons8.com/office/24/000000/italic.png"/></button>
+                <button type="button" onclick="f3()" class=" shadow-sm btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="Left Align">
+                    <i class="fas fa-align-left"></i></button>
+                <button type="button" onclick="f4()" class="btn shadow-sm btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="Center Align">
+                     <i class="fas fa-align-center"></i></button>
+                <button type="button" onclick="f5()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip" data-placement="top" title="Right Align">
+                        <i class="fas fa-align-right"></i></button>
+                <button type="button" onclick="f6()" class="btn shadow-sm btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="Uppercase Text">
+                        <img src="https://img.icons8.com/ios-filled/24/000000/uppercase.png"/></button>
+                <button type="button" onclick="f7()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip" data-placement="top" title="Lowercase Text">
+                        <img src="https://img.icons8.com/ios-glyphs/24/000000/lowercase-2--v1.png"/> </button>
+                <button type="button" onclick="f8()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip" data-placement="top" title="Capitalize Text">
+                        <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/000000/external-resize-font-size-in-text-document-application-text-shadow-tal-revivo.png"/></button>
+                <button type="button" onclick="f9()" class="btn shadow-sm btn-outline-primary side" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/clear-formatting.png" />Clear Text</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+
+            <div class="col-md-6 col-sm-9">
+                <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.fromData.id" />
+                <div class="flex-box">
+
+                    <textarea id="textarea1" class="input shadow" name="todo" #todo="ngModel" [(ngModel)]="service.fromData.todo" placeholder="Your text here " required>
+                    </textarea>
+                    <div *ngIf="todo.invalid && todo.touched" class="validation-error" style="color: blueviolet; font-size: medium; font-weight: 400; ">
+                        This field is required.
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <br> <br>
+                <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info" style="font-family: 'Roboto', sans-serif; font-weight:600">Submit</button>
+
+            </div>
+        </form>
+
+    </div>
+</section>

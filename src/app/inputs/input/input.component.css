@@ -1,0 +1,39 @@
+h1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    color: #957dad;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    padding: 5%;
+    padding-top: 0;
+    height: 100vh;
+}
+
+.side {
+    margin-left: 0;
+}
+
+button {
+    margin: 1px;
+    border-color: #8d3f00 !important;
+    color: #000000 !important;
+    margin-bottom: 1px;
+}
+
+button:hover {
+    background-color: #8ee6e6 !important;
+}
+
+textarea {
+    padding: 3%;
+    border-color: #666369;
+    border-width: thick;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+}
