@@ -1,6 +1,8 @@
 # SkugalAssign
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+![screenshot-localhost_4200-2022 02 14-18_05_03](https://user-images.githubusercontent.com/77641172/153867218-b8e77ec3-74d5-4192-9243-462328e35c31.png)
+
 
 ## Development server
 
